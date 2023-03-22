@@ -1,0 +1,22 @@
+{
+  "login.welcome": "Welcome back , Login",
+  "signup.welcome": "Welcome back! , Sign Up",
+  "login.forgot.password": "Forgot Password?",
+  "login.signin": "Sign In",
+  "login.signup": "Sign Up",
+  "login.submit": "Submit",
+  "login.new.user": "New User ? ",
+  "login.register.here": " Register Here",
+  "login.email": "Email",
+  "login.password": "Password",
+  "signup.username": " User Name",
+  "signup.email": " Email",
+  "signup.mobile.number": "Mobile Number",
+  "signup.forgot.number": "Enter Mobile Number",
+  "signup.password": "Password",
+  "signup.confirm.password": "Confirm Password",
+  "signup.signin.here": " Sign In Here",
+  "signup.already.user": "Already User ? ",
+  "login.trouble.signin": "Trouble signing in....Recover Password"
+
+}

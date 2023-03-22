@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:gps_patient_mobile/config/app_localizations.dart';
+import 'package:gps_patient_mobile/onboarding/pages/widgets/login_page.dart';
+import 'package:gps_patient_mobile/shared/app_const.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,11 +13,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: AppConst.appLanguage,
+      // locale: Provider.of<LocaleNotifier>(context).locale,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      localizationsDelegates: const [
+        AppLocalizationsDelegate(),
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate
+      ],
+      debugShowCheckedModeBanner: false,
+      home: const LoginPage(),
     );
   }
 }
